@@ -14,11 +14,9 @@ export const getData = createAsyncThunk('shehab', async (ids, ThunkAPI) => {
     })
 
     return data.data
-
   } catch (error) {
     return rejectWithValue(error)
   }
-
 })
 
 const initialState = { name: "shehab", age: 30, users: [], load: true, error: null, pop: 0 }
