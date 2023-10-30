@@ -12,6 +12,7 @@ export const getRating = createAsyncThunk("stars", async (id, ThunkAPI) => {
     return data.data;
   } catch (error) {
     rejectWithValue(error);
+    
   }
 });
 
