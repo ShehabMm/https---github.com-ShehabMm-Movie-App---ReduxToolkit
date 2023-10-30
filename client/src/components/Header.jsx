@@ -24,8 +24,8 @@ const Header = () => {
 
   return (
     <header className="bg-slate-900 text-white">
-      <div className="flex justify-between items-center max-w-6xl mx-auto p-3  ">
-        <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
+      <div className="flex justify-between items-center max-w-6xl mx-auto p-3 ">
+        <h1 className="font-bold text-sm sm:text-xl flex flex-wrap ">
           <Link to="/">
             <span className="text-slate-500">Movies</span>
             <span className="text-slate-700">Planet</span>
@@ -36,7 +36,7 @@ const Header = () => {
             e.preventDefault();
             perform();
           }}
-          className="bg-slate-100 p-3 rounded-lg flex items-center"
+          className="bg-slate-100 p-3 rounded-lg flex items-center sm:hidden md:flex"
         >
                     <FaSearch className="text-slate-500 mr-2" />
 

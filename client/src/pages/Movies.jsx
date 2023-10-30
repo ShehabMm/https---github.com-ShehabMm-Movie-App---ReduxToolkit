@@ -58,12 +58,11 @@ useEffect(()=>{
       <ImgCard details={details} seriesAllDetails={seriesAllDetails} />
 
       <Paper
-        style={{
-          width: "50%",
+        sx={{
+          width:{xs:'100%', },
           height: "50%",
           background: "linear-gradient(to bottom, #a18cd1, #fbc2eb)",
-          marginTop:100, 
-          overflow:"auto"
+          overflow:"auto",
 
         }}
       >
@@ -84,7 +83,7 @@ useEffect(()=>{
 
         <Box
           sx={{
-            width: "50%",
+            width:{xs:'100%', md:'50%'},
             textAlign: "center",
             marginLeft: "auto",
             marginRight: "auto",
