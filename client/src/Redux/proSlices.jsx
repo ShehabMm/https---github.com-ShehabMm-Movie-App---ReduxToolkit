@@ -9,7 +9,7 @@ export const getData = createAsyncThunk('shehab', async (ids, ThunkAPI) => {
   try {
     const data = await axios({
       method: 'GET',
-      url: 'http://localhost:8080/movies',
+      url: 'https://movieplanet-app.onrender.com/movies',
       params: { language: 'en-US', page:`${ids}`},
     })
 

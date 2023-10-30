@@ -11,7 +11,7 @@ try {
 const data = await axios({
 
   method: 'GET',
-  url: 'http://localhost:8080/movies/details',
+  url: 'https://movieplanet-app.onrender.com/movies/details',
   params: {language: 'en-US', id:`${id}`},
 });
 

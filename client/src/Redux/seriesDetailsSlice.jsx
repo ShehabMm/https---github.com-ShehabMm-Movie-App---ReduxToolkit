@@ -9,7 +9,7 @@ export const getseriesData = createAsyncThunk("aab", async (id, ThunkAPI) => {
 
     const data = await axios({
       method: 'GET',
-      url: 'http://localhost:8080/series/details',
+      url: 'https://movieplanet-app.onrender.com/series/details',
       params: { language: 'en-US', serId: id },
     })
     return data.data

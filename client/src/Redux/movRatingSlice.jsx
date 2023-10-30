@@ -6,7 +6,7 @@ export const getRating = createAsyncThunk("stars", async (id, ThunkAPI) => {
   try {
     const data = await axios({
       method: "GET",
-      url: `http://localhost:8080/movrating`,
+      url: `https://movieplanet-app.onrender.com/movrating`,
       params: { language: "en-US", serId:id },
     });
     return data.data;
