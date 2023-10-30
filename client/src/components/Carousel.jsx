@@ -12,7 +12,7 @@ function Arrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "black",width:'0px', borderRadius:"50%"  }}
+      style={{ ...style, display: "flex", background: "black",width:'0px', borderRadius:"50%", justifyContent:"center"  }}
       onClick={onClick}
     />
   );
@@ -27,7 +27,7 @@ const navigate = useNavigate()
   const settings = {
     nextArrow: <Arrow  />,
     prevArrow: <Arrow  />,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     autoplay: true,
